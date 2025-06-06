@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود / ثبت‌نام | Q1 Token</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-header">
+      <div class="logo">Q1 Token</div>
+      <h1>به جامعه Q1 خوش آمدید</h1>
+    </div>
+    
+    <div class="auth-tabs">
+      <button class="tab-btn active" data-tab="login">ورود</button>
+      <button class="tab-btn" data-tab="signup">ثبت‌نام</button>
+    </div>
+    
+    <div class="tab-content active" id="login">
+      <form class="auth-form">
+        <div class="form-group">
+          <label for="login-email">ایمیل یا نام کاربری</label>
+          <input type="text" id="login-email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="login-password">رمز عبور</label>
+          <input type="password" id="login-password" required>
+          <a href="forgot-password.html" class="forgot-password">رمز عبور را فراموش کرده‌ام</a>
+        </div>
+        
+        <div class="form-group remember-me">
+          <input type="checkbox" id="remember">
+          <label for="remember">مرا به خاطر بسپار</label>
+        </div>
+        
+        <button type="submit" class="btn-primary">ورود به حساب کاربری</button>
+        
+        <div class="social-login">
+          <p>یا با استفاده از</p>
+          <div class="social-buttons">
+            <button type="button" class="btn-google">
+              <i class="fab fa-google"></i> Google
+            </button>
+            <button type="button" class="btn-twitter">
+              <i class="fab fa-twitter"></i> Twitter
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <div class="tab-content" id="signup">
+      <form class="auth-form">
+        <div class="form-group">
+          <label for="signup-name">نام کامل</label>
+          <input type="text" id="signup-name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="signup-email">ایمیل</label>
+          <input type="email" id="signup-email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="signup-password">رمز عبور</label>
+          <input type="password" id="signup-password" required>
+          <div class="password-strength">
+            <span class="strength-bar weak"></span>
+            <span class="strength-bar medium"></span>
+            <span class="strength-bar strong"></span>
+            <span id="strength-text">ضعیف</span>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="signup-confirm">تکرار رمز عبور</label>
+          <input type="password" id="signup-confirm" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="referral">کد معرف (اختیاری)</label>
+          <input type="text" id="referral">
+        </div>
+        
+        <div class="form-group terms">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">با <a href="terms.html">قوانین و شرایط</a> استفاده موافقم</label>
+        </div>
+        
+        <button type="submit" class="btn-primary">ثبت‌نام</button>
+      </form>
+    </div>
+    
+    <div class="auth-footer">
+      <p>با ثبت‌نام یا ورود، شما موافقت خود را با <a href="privacy.html">سیاست حفظ حریم خصوصی</a> ما اعلام می‌کنید.</p>
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+  <script>
+    // Tab switching functionality
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.getAttribute('data-tab');
+        
+        // Remove active class from all buttons and contents
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+        
+        // Add active class to clicked button and corresponding content
+        btn.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+    
+    // Password strength indicator
+    const passwordInput = document.getElementById('signup-password');
+    const strengthBars = document.querySelectorAll('.strength-bar');
+    const strengthText = document.getElementById('strength-text');
+    
+    passwordInput.addEventListener('input', () => {
+      const password = passwordInput.value;
+      let strength = 0;
+      
+      // Check length
+      if (password.length >= 8) strength++;
+      if (password.length >= 12) strength++;
+      
+      // Check for mixed case
+      if (/[a-z]/.test(password) && /[A-Z]/.test(password)) strength++;
+      
+      // Check for numbers
+      if (/\d/.test(password)) strength++;
+      
+      // Check for special chars
+      if (/[^a-zA-Z0-9]/.test(password)) strength++;
+      
+      // Update UI
+      strengthBars.forEach((bar, index) => {
+        bar.style.width = index < strength ? '100%' : '0';
+      });
+      
+      // Update text
+      const strengthLabels = ['ضعیف', 'متوسط', 'قوی', 'خیلی قوی', 'عالی'];
+      strengthText.textContent = strengthLabels[Math.min(strength, 4)];
+    });
+  </script>
+</body>
+</html>
