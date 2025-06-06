@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تماس با ما | Q1 Token</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Q1 Token</div>
+      <ul class="nav-links">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="contact.html" class="active">تماس با ما</a></li>
+        <li><a href="faq.html">سوالات متداول</a></li>
+        <li><a href="support.html">پشتیبانی</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content-page">
+    <h1 class="page-title">تماس با Q1 Token</h1>
+    <p class="page-subtitle">ما آماده پاسخگویی به سوالات شما هستیم</p>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>اطلاعات تماس</h2>
+        
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>ایمیل</h3>
+            <p>info@q1token.com</p>
+            <p>support@q1token.com</p>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <i class="fas fa-headset"></i>
+          <div>
+            <h3>پشتیبانی</h3>
+            <p>تلگرام: @Q1TokenSupport</p>
+            <p>ساعات پاسخگویی: 9 صبح تا 5 عصر (به وقت تهران)</p>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>آدرس دفتر</h3>
+            <p>تهران، خیابان ولیعصر، کوچه فلان، پلاک ۱۲۳</p>
+            <p class="note">(ملاقات فقط با هماهنگی قبلی)</p>
+          </div>
+        </div>
+        
+        <div class="social-media">
+          <h3>شبکه‌های اجتماعی</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-medium"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h2>فرم تماس</h2>
+        <form action="/submit-contact" method="POST">
+          <div class="form-group">
+            <label for="name">نام کامل</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">ایمیل</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">موضوع</label>
+            <select id="subject" name="subject">
+              <option value="general">عمومی</option>
+              <option value="support">پشتیبانی فنی</option>
+              <option value="partnership">همکاری تجاری</option>
+              <option value="investment">سرمایه‌گذاری</option>
+              <option value="media">رسانه‌ها</option>
+              <option value="other">سایر</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">پیام شما</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="attachment">ضمیمه (اختیاری)</label>
+            <input type="file" id="attachment" name="attachment">
+          </div>
+          
+          <button type="submit" class="btn-primary">ارسال پیام</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="faq-redirect">
+      <p>پیش از ارسال پیام، ممکن است پاسخ سوال خود را در <a href="faq.html">صفحه سوالات متداول</a> پیدا کنید.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>تمام حقوق محفوظ است © 2025 Q1 Token</p>
+    </div>
+  </footer>
+  
+  <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</body>
+</html>
