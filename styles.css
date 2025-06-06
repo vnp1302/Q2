@@ -883,5 +883,365 @@ footer {
   .social-buttons {
     flex-direction: column;
   }
+/* استایل‌های صفحه درباره ما */
+.about-hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 6rem 0;
+  text-align: center;
+  color: #fff;
 }
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem 0;
+}
+
+.about-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mission-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.mission-list li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.mission-list li:before {
+  content: '✓';
+  color: #00cccc;
+  position: absolute;
+  right: 0;
+}
+
+.about-values {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.about-values h2 {
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background: #262626;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-team-preview {
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.team-preview {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: #262626;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+.about-cta {
+  background: #1a1a1a;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about-cta h2 {
+  margin-bottom: 1rem;
+}
+
+.about-cta p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 2px solid #00cccc;
+  color: #00cccc;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background: rgba(0, 204, 204, 0.1);
+}
+
+/* استایل‌های صفحه توکنومیک */
+.tokenomics-hero {
+  background: linear-gradient(to right, #0f2027, #203a43);
+  padding: 6rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.tokenomics-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.tokenomics-hero .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.tokenomics-overview {
+  margin-top: -3rem;
+}
+
+.overview-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.overview-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: #262626;
+  border-radius: 8px;
+}
+
+.big-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00cccc;
+  margin: 0.5rem 0;
+}
+
+.distribution-container {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.distribution-chart {
+  flex: 1;
+  max-width: 400px;
+}
+
+.distribution-details {
+  flex: 1;
+}
+
+.distribution-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+}
+
+.item-info h4 {
+  margin: 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+}
+
+.release-schedule {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.release-chart {
+  flex: 1;
+}
+
+.release-details {
+  flex: 1;
+}
+
+.vesting-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.vesting-table th, .vesting-table td {
+  padding: 0.8rem;
+  text-align: right;
+  border-bottom: 1px solid #333;
+}
+
+.vesting-table th {
+  background: #333;
+}
+
+.utility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.utility-card {
+  background: #262626;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.utility-card:hover {
+  transform: translateY(-5px);
+}
+
+.utility-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.burn-mechanism {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.burn-text {
+  flex: 1;
+}
+
+.burn-image {
+  flex: 1;
+}
+
+.burn-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.burn-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.burn-stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: #262626;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.tokenomics-cta {
+  background: #1a1a1a;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* رسپانسیو */
+@media (max-width: 768px) {
+  .about-section, .about-section.reverse {
+    flex-direction: column;
+  }
+  
+  .distribution-container, .release-schedule, .burn-mechanism {
+    flex-direction: column;
+  }
+  
+  .distribution-chart, .release-chart {
+    max-width: 100%;
+  }
+  
+  .burn-stats {
+    flex-direction: column;
+  }
+}
+
+
 }
