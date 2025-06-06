@@ -1,4 +1,4 @@
-# Q1 Token ERC1155 Website
+# Q1 Token - Multi-Token ERC1155 Ecosystem
 
 
 
@@ -6,47 +6,54 @@
 
 
 
-Official website for Q1 Token - A multi-token ERC1155 ecosystem on Ethereum and Polygon.
+The official website and management interface for Q1 Token - An advanced multi-token system built on the ERC1155 standard across Ethereum and Polygon networks.
 
 
 
-## Features
+## Table of Contents
 
 
 
-- Complete ERC1155 token management interface
+- [Key Features](#-key-features)
 
-- Multi-chain support (Ethereum + Polygon)
+- [Project Structure](#-project-structure) 
 
-- Interactive dashboard for token holders
+- [Prerequisites](#-prerequisites)
 
-- Responsive design for all devices
+- [Getting Started](#-getting-started)
 
-- Modern design system with dark/light mode
+- [Environment Variables](#-environment-variables)
 
+- [Available Scripts](#-available-scripts)
 
+- [Backend Integration](#-backend-integration)
 
-## Prerequisites
+- [Admin Panel](#-admin-panel)
 
+- [Deployment](#-deployment)
 
+- [Contributing](#-contributing)
 
-- Node.js v16+
-
-- npm v8+
-
-- Git
-
-
-
-## Installation
+- [License](#-license)
 
 
 
-```bash
+## 🌟 Key Features
 
-git clone https://github.com/your-repo/q1-token-website.git
 
-cd q1-token-website
 
-npm install
+- **Full ERC1155 Support**: Manage both fungible and non-fungible tokens
 
+- **Multi-Chain Architecture**: Deployed on Ethereum and Polygon
+
+- **Interactive Dashboard**: Real-time token management for holders
+
+- **Responsive Design**: Optimized for all devices
+
+- **Modern UI**: Dark/light mode with customizable design system
+
+- **Admin Portal**: Advanced token and user management
+
+- **Secure Authentication**: Web3 wallet login with JWT
+
+- **SEO Optimized**: Full Open Graph and metadata support
