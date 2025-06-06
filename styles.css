@@ -309,4 +309,579 @@ footer {
   .roadmap:before {
     display: none;
   }
+
+  /* استایل‌های صفحه نقشه راه */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #00cccc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-date {
+  padding: 0.5rem 1rem;
+  background: #00cccc;
+  color: #000;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.timeline-content {
+  padding: 1.5rem;
+  background: #262626;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.timeline-content h3 {
+  color: #00cccc;
+  margin-top: 0;
+}
+
+/* استایل‌های صفحه نحوه خرید */
+.buy-steps {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+.step-number {
+  background: #00cccc;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  background: #262626;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+.exchanges {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.exchange {
+  background: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exchange img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.dex-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-dex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #333;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-dex:hover {
+  background: #00cccc;
+  color: #000;
+}
+
+.btn-dex img {
+  width: 20px;
+  height: 20px;
+}
+
+.note {
+  background: rgba(0, 204, 204, 0.1);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-top: 2rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* استایل‌های صفحه تیم */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.member {
+  background: #262626;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-10px);
+}
+
+.member-photo {
+  position: relative;
+  height: 250px;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-links a {
+  background: rgba(0,0,0,0.7);
+  color: #00cccc;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-info {
+  padding: 1.5rem;
+}
+
+.position {
+  color: #00cccc;
+  margin: 0.5rem 0;
+}
+
+.dev-team, .advisors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.dev-member, .advisor {
+  text-align: center;
+  background: #262626;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.dev-member img, .advisor img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+.join-team {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+/* استایل‌های صفحه شرکا */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.partner-card {
+  background: #262626;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.partner-card:hover {
+  transform: scale(1.05);
+}
+
+.partner-card img {
+  max-width: 150px;
+  max-height: 80px;
+  margin: 0 auto 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.partner-card:hover img {
+  filter: grayscale(0%);
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.partners-logos img {
+  max-width: 120px;
+  max-height: 60px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.partners-logos img:hover {
+  opacity: 1;
+}
+
+.local-partner {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: #262626;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.local-partner img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.become-partner {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+/* استایل‌های صفحه تماس */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  color: #00cccc;
+  margin-top: 0.3rem;
+}
+
+.social-media {
+  margin-top: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #00cccc;
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  background: #262626;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #fff;
+  font-family: 'Vazir', sans-serif;
+}
+
+.form-group textarea {
+  min-height: 150px;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terms input {
+  width: auto;
+}
+
+.faq-redirect {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: rgba(0, 204, 204, 0.1);
+  border-radius: 8px;
+}
+
+/* استایل‌های صفحه ورود/ثبت‌نام */
+.auth-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-tabs {
+  display: flex;
+  border-bottom: 1px solid #333;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  padding: 0.8rem 1.5rem;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-btn.active {
+  color: #00cccc;
+}
+
+.tab-btn.active:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00cccc;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.auth-form {
+  margin-top: 1.5rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: #00cccc;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.social-login {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.btn-google, .btn-twitter {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-google {
+  background: #fff;
+  color: #000;
+}
+
+.btn-twitter {
+  background: #1DA1F2;
+  color: #fff;
+}
+
+.password-strength {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.strength-bar {
+  height: 4px;
+  background: #333;
+  flex-grow: 1;
+  border-radius: 2px;
+}
+
+.auth-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* رسپانسیو */
+@media (max-width: 768px) {
+  .timeline:before {
+    left: 31px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .step {
+    flex-direction: column;
+  }
+  
+  .step-number {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-members, .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .local-partner {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social-buttons {
+    flex-direction: column;
+  }
+}
 }
