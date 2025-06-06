@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>توکنومیک | Q1 Token</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Q1 Token</div>
+      <ul class="nav-links">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="tokenomics.html" class="active">توکنومیک</a></li>
+        <li><a href="how-to-buy.html">نحوه خرید</a></li>
+        <li><a href="roadmap.html">نقشه راه</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="tokenomics-page">
+    <section class="tokenomics-hero">
+      <div class="container">
+        <h1>اقتصاد توکن Q1</h1>
+        <p class="subtitle">مدل اقتصادی طراحی شده برای پایداری بلندمدت</p>
+      </div>
+    </section>
+
+    <section class="tokenomics-overview">
+      <div class="container">
+        <div class="overview-card">
+          <div class="overview-item">
+            <h3>تعداد کل توکن‌ها</h3>
+            <p class="big-number">1,000,000,000</p>
+            <p>توکن Q1</p>
+          </div>
+          <div class="overview-item">
+            <h3>عرضه در گردش</h3>
+            <p class="big-number">250,000,000</p>
+            <p>توکن Q1 (25%)</p>
+          </div>
+          <div class="overview-item">
+            <h3>قیمت فعلی</h3>
+            <p class="big-number">$0.15</p>
+            <p>در هر توکن</p>
+          </div>
+          <div class="overview-item">
+            <h3>ارزش بازار</h3>
+            <p class="big-number">$37,500,000</p>
+            <p>ارزش کل</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenomics-content">
+      <div class="container">
+        <div class="tokenomics-section">
+          <h2>توزیع توکن‌ها</h2>
+          <div class="distribution-container">
+            <div class="distribution-chart">
+              <canvas id="tokenDistributionChart"></canvas>
+            </div>
+            <div class="distribution-details">
+              <div class="distribution-item">
+                <div class="color-box" style="background-color: #00cccc;"></div>
+                <div class="item-info">
+                  <h4>عرضه عمومی</h4>
+                  <p>40% (400,000,000 توکن)</p>
+                  <p class="description">عرضه در صرافی‌ها برای عموم سرمایه‌گذاران</p>
+                </div>
+              </div>
+              <div class="distribution-item">
+                <div class="color-box" style="background-color: #2c5364;"></div>
+                <div class="item-info">
+                  <h4>تیم توسعه</h4>
+                  <p>15% (150,000,000 توکن)</p>
+                  <p class="description">تخصیص به تیم اصلی با دوره وستینگ 3 ساله</p>
+                </div>
+              </div>
+              <div class="distribution-item">
+                <div class="color-box" style="background-color: #203a43;"></div>
+                <div class="item-info">
+                  <h4>توسعه اکوسیستم</h4>
+                  <p>20% (200,000,000 توکن)</p>
+                  <p class="description">هزینه‌های توسعه و بهبود پلتفرم</p>
+                </div>
+              </div>
+              <div class="distribution-item">
+                <div class="color-box" style="background-color: #0f2027;"></div>
+                <div class="item-info">
+                  <h4>پاداش و استیکینگ</h4>
+                  <p>15% (150,000,000 توکن)</p>
+                  <p class="description">پاداش به کاربران برای استیکینگ و مشارکت</p>
+                </div>
+              </div>
+              <div class="distribution-item">
+                <div class="color-box" style="background-color: #1a1a1a;"></div>
+                <div class="item-info">
+                  <h4>مارکتینگ و همکاری‌ها</h4>
+                  <p>10% (100,000,000 توکن)</p>
+                  <p class="description">هزینه‌های بازاریابی و همکاری‌های استراتژیک</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tokenomics-section">
+          <h2>برنامه انتشار توکن‌ها</h2>
+          <div class="release-schedule">
+            <div class="release-chart">
+              <canvas id="tokenReleaseChart"></canvas>
+            </div>
+            <div class="release-details">
+              <h3>جدول زمانی وستینگ</h3>
+              <table class="vesting-table">
+                <thead>
+                  <tr>
+                    <th>دسته توکن</th>
+                    <th>دوره قفل</th>
+                    <th>مدت وستینگ</th>
+                    <th>انتشار ماهانه</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>تیم توسعه</td>
+                    <td>12 ماه</td>
+                    <td>24 ماه</td>
+                    <td>4.17%</td>
+                  </tr>
+                  <tr>
+                    <td>توسعه اکوسیستم</td>
+                    <td>6 ماه</td>
+                    <td>36 ماه</td>
+                    <td>2.78%</td>
+                  </tr>
+                  <tr>
+                    <td>پاداش و استیکینگ</td>
+                    <td>-</td>
+                    <td>48 ماه</td>
+                    <td>2.08%</td>
+                  </tr>
+                  <tr>
+                    <td>مارکتینگ</td>
+                    <td>3 ماه</td>
+                    <td>24 ماه</td>
+                    <td>4.17%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="tokenomics-section">
+          <h2>کاربردهای توکن Q1</h2>
+          <div class="utility-grid">
+            <div class="utility-card">
+              <div class="utility-icon">💱</div>
+              <h3>معاملات</h3>
+              <p>استفاده به عنوان وسیله مبادله در اکوسیستم Q1 و پرداخت کارمزد تراکنش‌ها</p>
+            </div>
+            <div class="utility-card">
+              <div class="utility-icon">🏦</div>
+              <h3>استیکینگ</h3>
+              <p>قفل کردن توکن‌ها برای دریافت پاداش و مشارکت در امنیت شبکه</p>
+            </div>
+            <div class="utility-card">
+              <div class="utility-icon">🗳️</div>
+              <h3>حاکمیت</h3>
+              <p>حق رأی در تصمیم‌گیری‌های مهم پروژه متناسب با مقدار توکن‌های نگهداری شده</p>
+            </div>
+            <div class="utility-card">
+              <div class="utility-icon">🎁</div>
+              <h3>پاداش‌ها</h3>
+              <p>توزیع پاداش به کاربران فعال و مشارکت‌کنندگان در اکوسیستم</p>
+            </div>
+            <div class="utility-card">
+              <div class="utility-icon">🔒</div>
+              <h3>تضمین</h3>
+              <p>استفاده به عنوان وثیقه در پروتکل‌های وام‌دهی غیرمتمرکز</p>
+            </div>
+            <div class="utility-card">
+              <div class="utility-icon">🛒</div>
+              <h3>خرید</h3>
+              <p>خرید محصولات و خدمات در پلتفرم‌های همکار</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tokenomics-section">
+          <h2>سوزاندن توکن (Token Burn)</h2>
+          <div class="burn-mechanism">
+            <div class="burn-text">
+              <p>برای حفظ ارزش توکن Q1 در بلندمدت، مکانیسم سوزاندن توکن طراحی شده است. بخشی از کارمزد تراکنش‌ها و سود حاصل از برخی خدمات به صورت دوره‌ای سوزانده می‌شود که منجر به کاهش تدریجی عرضه توکن و افزایش ارزش آن می‌گردد.</p>
+              <div class="burn-stats">
+                <div class="burn-stat">
+                  <h4>توکن‌های سوزانده شده تاکنون</h4>
+                  <p class="big-number">25,000,000</p>
+                  <p>توکن Q1</p>
+                </div>
+                <div class="burn-stat">
+                  <h4>درصد از عرضه کل</h4>
+                  <p class="big-number">2.5%</p>
+                  <p>تا تاریخ امروز</p>
+                </div>
+              </div>
+            </div>
+            <div class="burn-image">
+              <img src="images/token-burn.png" alt="مکانیسم سوزاندن توکن">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenomics-cta">
+      <div class="container">
+        <h2>آماده سرمایه‌گذاری در Q1 Token هستید؟</h2>
+        <p>همین حالا به جمع سرمایه‌گذاران ما بپیوندید و از مزایای اکوسیستم Q1 بهره‌مند شوید.</p>
+        <div class="cta-buttons">
+          <a href="how-to-buy.html" class="btn-primary">خرید توکن</a>
+          <a href="whitepaper.pdf" class="btn-outline">مطالعه وایت‌پیپر</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Q1 Token</h4>
+          <p>پروژه ای نوآورانه در اکوسیستم بلاکچین با هدف ایجاد تحول در نظام مالی جهانی</p>
+        </div>
+        <div class="footer-section">
+          <h4>اطلاعات توکن</h4>
+          <ul>
+            <li>آدرس قرارداد: <code>0x892...43e7</code></li>
+            <li>تعداد کل: 1,000,000,000</li>
+            <li>استاندارد: ERC-20</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>ارتباط با ما</h4>
+          <ul>
+            <li><a href="mailto:info@q1token.com">info@q1token.com</a></li>
+            <li><a href="https://t.me/q1token">تلگرام</a></li>
+            <li><a href="https://twitter.com/q1token">توییتر</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>تمام حقوق محفوظ است © 2025 Q1 Token</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Token Distribution Chart
+    const distributionCtx = document.getElementById('tokenDistributionChart').getContext('2d');
+    const distributionChart = new Chart(distributionCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['عرضه عمومی', 'تیم توسعه', 'توسعه اکوسیستم', 'پاداش و استیکینگ', 'مارکتینگ'],
+        datasets: [{
+          data: [40, 15, 20, 15, 10],
+          backgroundColor: [
+            '#00cccc',
+            '#2c5364',
+            '#203a43',
+            '#0f2027',
+            '#1a1a1a'
+          ],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            rtl: true
+          }
+        },
+        cutout: '70%'
+      }
+    });
+
+    // Token Release Chart
+    const releaseCtx = document.getElementById('tokenReleaseChart').getContext('2d');
+    const releaseChart = new Chart(releaseCtx, {
+      type: 'bar',
+      data: {
+        labels: ['سال 1', 'سال 2', 'سال 3', 'سال 4'],
+        datasets: [
+          {
+            label: 'عرضه عمومی',
+            data: [100, 100, 100, 100],
+            backgroundColor: '#00cccc'
+          },
+          {
+            label: 'تیم توسعه',
+            data: [0, 50, 50, 50],
+            backgroundColor: '#2c5364'
+          },
+          {
+            label: 'توسعه اکوسیستم',
+            data: [0, 33.33, 33.33, 33.33],
+            backgroundColor: '#203a43'
+          },
+          {
+            label: 'پاداش و استیکینگ',
+            data: [25, 25, 25, 25],
+            backgroundColor: '#0f2027'
+          },
+          {
+            label: 'مارکتینگ',
+            data: [0, 50, 50, 0],
+            backgroundColor: '#1a1a1a'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: {
+            stacked: true,
+          },
+          y: {
+            stacked: true,
+            ticks: {
+              callback: function(value) {
+                return value + '%';
+              }
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            position: 'bottom',
+            rtl: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
