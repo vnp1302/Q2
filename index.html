@@ -1,233 +1,246 @@
 <!DOCTYPE html>
-
-<html lang="en" data-theme="light">
-
+<html lang="en" dir="ltr" data-theme="light">
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Q1 Token | Multi-Token Ecosystem</title>
-
-    <meta name="description" content="Q1 is an advanced ERC1155 multi-token system enabling seamless management of fungible and non-fungible assets">
-
-    
-
-    <!-- Favicon -->
-
-    <link rel="icon" href="/assets/favicon.ico">
-
-    
-
-    <!-- Fonts -->
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-
-    
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="/css/main.css">
-
-    
-
-    <!-- Preload -->
-
-    <link rel="preload" as="image" href="/assets/q1-logo.svg">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1 Token | Multi-Token Ecosystem</title>
+  <meta name="description" content="Q1 is an advanced ERC1155 multi-token system enabling seamless management of fungible and non-fungible assets">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico">
+  
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Preload -->
+  <link rel="preload" as="image" href="assets/q1-logo.svg">
 </head>
 
 <body>
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="fa">FA</button>
+  </div>
 
-    <!-- Navigation -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="assets/q1-logo.svg" alt="Q1 Token Logo">
+        <span class="en">Q1 Token</span>
+        <span class="fa" style="display:none">توکن Q1</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="about.html" class="nav-link en">About</a>
+        <a href="about.html" class="nav-link fa" style="display:none">درباره ما</a>
+        
+        <a href="tokenomics.html" class="nav-link en">Tokenomics</a>
+        <a href="tokenomics.html" class="nav-link fa" style="display:none">توکنومیک</a>
+        
+        <a href="ecosystem.html" class="nav-link en">Ecosystem</a>
+        <a href="ecosystem.html" class="nav-link fa" style="display:none">اکوسیستم</a>
+        
+        <a href="marketplace.html" class="nav-link en">Marketplace</a>
+        <a href="marketplace.html" class="nav-link fa" style="display:none">مارکت‌پلیس</a>
+        
+        <a href="dashboard.html" class="nav-link en">Dashboard</a>
+        <a href="dashboard.html" class="nav-link fa" style="display:none">داشبورد</a>
+      </div>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle">
+          <span class="dark-icon">🌙</span>
+          <span class="light-icon">☀️</span>
+        </button>
+        <a href="dashboard.html" class="btn-primary en">Connect Wallet</a>
+        <a href="dashboard.html" class="btn-primary fa" style="display:none">اتصال کیف پول</a>
+      </div>
+    </div>
+  </nav>
 
-    <nav class="navbar">
-
-        <div class="container">
-
-            <a href="/" class="brand">
-
-                <img src="/assets/q1-logo.svg" alt="Q1 Token Logo">
-
-                <span>Q1 Token</span>
-
-            </a>
-
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="en">Multi-Token Ecosystem</h1>
+          <h1 class="fa" style="display:none">اکوسیستم چندتوکنی</h1>
+          
+          <p class="subtitle en">Experience the power of ERC1155 with Q1's advanced token system</p>
+          <p class="subtitle fa" style="display:none">قدرت استاندارد ERC1155 را با سیستم پیشرفته توکن Q1 تجربه کنید</p>
+          
+          <div class="hero-actions">
+            <a href="tokenomics.html" class="btn-primary en">Explore Tokenomics</a>
+            <a href="tokenomics.html" class="btn-primary fa" style="display:none">مشاهده توکنومیک</a>
             
-
-            <div class="nav-links">
-
-                <a href="/about.html" class="nav-link">About</a>
-
-                <a href="/tokenomics.html" class="nav-link">Tokenomics</a>
-
-                <a href="/ecosystem.html" class="nav-link">Ecosystem</a>
-
-                <a href="/marketplace.html" class="nav-link">Marketplace</a>
-
-                <a href="/dashboard.html" class="nav-link">Dashboard</a>
-
-            </div>
-
-            
-
-            <div class="nav-actions">
-
-                <button class="theme-toggle">
-
-                    <span class="dark-icon">🌙</span>
-
-                    <span class="light-icon">☀️</span>
-
-                </button>
-
-                <a href="/dashboard.html" class="btn-primary">Connect Wallet</a>
-
-            </div>
-
+            <a href="marketplace.html" class="btn-secondary en">Visit Marketplace</a>
+            <a href="marketplace.html" class="btn-secondary fa" style="display:none">ورود به مارکت‌پلیس</a>
+          </div>
         </div>
-
-    </nav>
-
-
-
-    <!-- Main Content -->
-
-    <main>
-
-        <section class="hero">
-
-            <div class="container">
-
-                <div class="hero-content">
-
-                    <h1>Multi-Token Ecosystem</h1>
-
-                    <p class="subtitle">Experience the power of ERC1155 with Q1's advanced token system</p>
-
-                    <div class="hero-actions">
-
-                        <a href="/tokenomics.html" class="btn-primary">Explore Tokenomics</a>
-
-                        <a href="/marketplace.html" class="btn-secondary">Visit Marketplace</a>
-
-                    </div>
-
-                </div>
-
-                <img src="/assets/hero-token.png" class="hero-image" alt="Q1 Token Visualization">
-
-            </div>
-
-        </section>
-
-
-
-        <!-- Other sections will be added here -->
-
-    </main>
-
-
-
-    <!-- Footer -->
-
-    <footer class="main-footer">
-
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <div class="footer-brand">
-
-                    <img src="/assets/q1-logo.svg" alt="Q1 Token">
-
-                    <p>Next-Gen Multi-Token Ecosystem</p>
-
-                </div>
-
-                
-
-                <div class="footer-links">
-
-                    <h3>Navigation</h3>
-
-                    <ul>
-
-                        <li><a href="/about.html">About</a></li>
-
-                        <li><a href="/tokenomics.html">Tokenomics</a></li>
-
-                        <li><a href="/ecosystem.html">Ecosystem</a></li>
-
-                    </ul>
-
-                </div>
-
-                
-
-                <div class="footer-social">
-
-                    <h3>Connect</h3>
-
-                    <div class="social-links">
-
-                        <a href="https://twitter.com/q1token" target="_blank" class="twitter"></a>
-
-                        <a href="https://t.me/q1token_official" target="_blank" class="telegram"></a>
-
-                        <a href="https://discord.gg/q1token" target="_blank" class="discord"></a>
-
-                    </div>
-
-                </div>
-
-                
-
-                <div class="footer-newsletter">
-
-                    <h3>Stay Updated</h3>
-
-                    <form class="newsletter-form">
-
-                        <input type="email" placeholder="Your email" required>
-
-                        <button type="submit">Subscribe</button>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-            
-
-            <div class="footer-bottom">
-
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Q1 Token. All rights reserved.</p>
-
-                <div class="legal-links">
-
-                    <a href="/privacy.html">Privacy Policy</a>
-
-                    <a href="/terms.html">Terms of Service</a>
-
-                </div>
-
-            </div>
-
+        <img src="assets/hero-token.png" class="hero-image" alt="Q1 Token Visualization">
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="en">Key Features</h2>
+        <h2 class="fa" style="display:none">ویژگی‌های کلیدی</h2>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3 class="en">Secure & Transparent</h3>
+            <h3 class="fa" style="display:none">امن و شفاف</h3>
+            <p class="en">All transactions are recorded on blockchain and immutable. We use smart contracts to ensure security.</p>
+            <p class="fa" style="display:none">تمام تراکنش‌ها در بلاکچین ثبت شده و غیرقابل تغییر هستند. از قراردادهای هوشمند برای تضمین امنیت استفاده می‌کنیم.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3 class="en">Expert Team</h3>
+            <h3 class="fa" style="display:none">تیم متخصص</h3>
+            <p class="en">A team experienced in cryptocurrencies and new technologies with over 5 years in blockchain development.</p>
+            <p class="fa" style="display:none">تیمی با تجربه در حوزه رمزارزها و فناوری‌های نوین با بیش از 5 سال تجربه در توسعه بلاکچین.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3 class="en">Real Utility</h3>
+            <h3 class="fa" style="display:none">کاربرد واقعی</h3>
+            <p class="en">Q1 is developed for real-world, forward-thinking projects with diverse use cases in our ecosystem.</p>
+            <p class="fa" style="display:none">Q1 برای پروژه‌های واقعی و آینده‌نگرانه توسعه یافته و کاربردهای متنوعی در اکوسیستم ما دارد.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </footer>
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stat-item">
+          <span class="stat-number">10M+</span>
+          <span class="stat-label en">Tokens Issued</span>
+          <span class="stat-label fa" style="display:none">توکن عرضه شده</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">5K+</span>
+          <span class="stat-label en">Active Users</span>
+          <span class="stat-label fa" style="display:none">کاربر فعال</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">20+</span>
+          <span class="stat-label en">Strategic Partners</span>
+          <span class="stat-label fa" style="display:none">همکاری استراتژیک</span>
+        </div>
+      </div>
+    </section>
 
+    <!-- Token Types Section -->
+    <section class="token-types">
+      <div class="container">
+        <h2 class="en">ERC1155 Multi-Token System</h2>
+        <h2 class="fa" style="display:none">سیستم چندتوکنی ERC1155</h2>
+        
+        <div class="types-grid">
+          <div class="type-card">
+            <h3 class="en">Fungible Tokens</h3>
+            <h3 class="fa" style="display:none">توکن‌های قابل تعویض</h3>
+            <p class="en">Standard cryptocurrency tokens with identical values and properties.</p>
+            <p class="fa" style="display:none">توکن‌های استاندارد ارز دیجیتال با ارزش و ویژگی‌های یکسان.</p>
+          </div>
+          
+          <div class="type-card">
+            <h3 class="en">Non-Fungible Tokens</h3>
+            <h3 class="fa" style="display:none">توکن‌های غیرقابل تعویض</h3>
+            <p class="en">Unique digital assets with distinct properties and values.</p>
+            <p class="fa" style="display:none">دارایی‌های دیجیتال منحصر به فرد با ویژگی‌ها و ارزش‌های متمایز.</p>
+          </div>
+          
+          <div class="type-card">
+            <h3 class="en">Semi-Fungible Tokens</h3>
+            <h3 class="fa" style="display:none">توکن‌های نیمه قابل تعویض</h3>
+            <p class="en">Tokens that can behave as both fungible and non-fungible assets.</p>
+            <p class="fa" style="display:none">توکن‌هایی که می‌توانند هم به عنوان دارایی قابل تعویض و هم غیرقابل تعویض عمل کنند.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/q1-logo.svg" alt="Q1 Token">
+          <p class="en">Next-Gen Multi-Token Ecosystem</p>
+          <p class="fa" style="display:none">اکوسیستم چندتوکنی نسل جدید</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3 class="en">Navigation</h3>
+          <h3 class="fa" style="display:none">منو</h3>
+          <ul>
+            <li><a href="about.html" class="en">About</a></li>
+            <li><a href="about.html" class="fa" style="display:none">درباره ما</a></li>
+            
+            <li><a href="tokenomics.html" class="en">Tokenomics</a></li>
+            <li><a href="tokenomics.html" class="fa" style="display:none">توکنومیک</a></li>
+            
+            <li><a href="ecosystem.html" class="en">Ecosystem</a></li>
+            <li><a href="ecosystem.html" class="fa" style="display:none">اکوسیستم</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h3 class="en">Connect</h3>
+          <h3 class="fa" style="display:none">ارتباط با ما</h3>
+          <div class="social-links">
+            <a href="https://twitter.com/q1token" target="_blank" class="twitter"></a>
+            <a href="https://t.me/q1token_official" target="_blank" class="telegram"></a>
+            <a href="https://discord.gg/q1token" target="_blank" class="discord"></a>
+          </div>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h3 class="en">Stay Updated</h3>
+          <h3 class="fa" style="display:none">به روز بمانید</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" class="en" required>
+            <input type="email" placeholder="ایمیل شما" class="fa" style="display:none" required>
+            <button type="submit" class="en">Subscribe</button>
+            <button type="submit" class="fa" style="display:none">عضویت</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="en">&copy; <script>document.write(new Date().getFullYear())</script> Q1 Token. All rights reserved.</p>
+        <p class="fa" style="display:none">&copy; <script>document.write(new Date().getFullYear())</script> توکن Q1. تمام حقوق محفوظ است.</p>
+        
+        <div class="legal-links">
+          <a href="privacy.html" class="en">Privacy Policy</a>
+          <a href="privacy.html" class="fa" style="display:none">حریم خصوصی</a>
+          
+          <a href="terms.html" class="en">Terms of Service</a>
+          <a href="terms.html" class="fa" style="display:none">شرایط استفاده</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- JavaScript -->
-
-    <script src="/js/web3-integration.js"></script>
-
-    <script src="/js/main.js"></script>
-
+  <!-- JavaScript -->
+  <script src="js/lang-switcher.js"></script>
+  <script src="js/theme-switcher.js"></script>
+  <script src="js/web3-integration.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
