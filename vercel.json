@@ -1,15 +1,35 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "**",
-      "use": "@vercel/static"
-    }
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "about.html", "use": "@vercel/static" },
+    { "src": "amp.html", "use": "@vercel/static" },
+    { "src": "contact.html", "use": "@vercel/static" },
+    { "src": "faq.html", "use": "@vercel/static" },
+    { "src": "how-to-buy.html", "use": "@vercel/static" },
+    { "src": "login-signup.html", "use": "@vercel/static" },
+    { "src": "partners.html", "use": "@vercel/static" },
+    { "src": "roadmap.html", "use": "@vercel/static" },
+    { "src": "css/**", "use": "@vercel/static" },
+    { "src": "js/**", "use": "@vercel/static" },
+    { "src": "public/**", "use": "@vercel/static" },
+    { "src": "package.json", "use": "@vercel/next" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/amp", "dest": "/amp.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/faq", "dest": "/faq.html" },
+    { "src": "/how-to-buy", "dest": "/how-to-buy.html" },
+    { "src": "/login-signup", "dest": "/login-signup.html" },
+    { "src": "/partners", "dest": "/partners.html" },
+    { "src": "/roadmap", "dest": "/roadmap.html" },
+    { "src": "/css/(.*)", "dest": "/css/$1" },
+    { "src": "/js/(.*)", "dest": "/js/$1" },
+    { "src": "/public/(.*)", "dest": "/public/$1" },
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/admin", "dest": "/pages/admin" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
