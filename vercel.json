@@ -132,4 +132,12 @@
       "destination": "/api/token?id=:id"
     }
   ]
+  {
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next"
+}
+
 }
