@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود - Q2</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Q2</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="dashboard.html">داشبورد</a></li>
+                <li><a href="marketplace.html">بازار</a></li>
+                <li><a href="ecosystem.html">اکوسیستم</a></li>
+                <li><a href="login.html" class="active">ورود</a></li>
+                <li><a href="signup.html">ثبت نام</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>ورود به حساب</h1>
+                <p>به Q2 خوش آمدید</p>
+            </div>
+
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">ایمیل</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">رمز عبور</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span>مرا به خاطر بسپار</span>
+                    </label>
+                    <a href="#" class="forgot-link">رمز عبور را فراموش کرده‌اید؟</a>
+                </div>
+
+                <button type="submit" class="btn-primary">ورود</button>
+
+                <div class="auth-divider">
+                    <span>یا</span>
+                </div>
+
+                <button type="button" class="btn-social google">
+                    ورود با Google
+                </button>
+
+                <button type="button" class="btn-social github">
+                    ورود با GitHub
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                <p>حساب کاربری ندارید؟ <a href="signup.html">ثبت نام کنید</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
