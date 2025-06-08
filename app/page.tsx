@@ -1,6 +1,16 @@
 "use client"
 
 import Link from "next/link"
+import AdminLayout from "@layouts/AdminLayout"
+
+export default function Page() {
+  return (
+    <AdminLayout>
+      <h1>Welcome to the Admin Panel</h1>
+      <p>This is the main page of the admin panel.</p>
+    </AdminLayout>
+  )
+}
 
 export default function Home() {
   return (
