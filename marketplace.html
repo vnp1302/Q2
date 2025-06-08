@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازار - Q2</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/marketplace.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Q2</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="dashboard.html">داشبورد</a></li>
+                <li><a href="marketplace.html" class="active">بازار</a></li>
+                <li><a href="ecosystem.html">اکوسیستم</a></li>
+                <li><a href="login.html">ورود</a></li>
+                <li><a href="signup.html">ثبت نام</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="marketplace-container">
+        <div class="marketplace-header">
+            <h1>بازار Q2</h1>
+            <p>بهترین محصولات و خدمات را کشف کنید</p>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="جستجو در بازار...">
+                <button type="submit">جستجو</button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label>دسته‌بندی:</label>
+                <select>
+                    <option>همه</option>
+                    <option>نرم‌افزار</option>
+                    <option>طراحی</option>
+                    <option>آموزش</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>قیمت:</label>
+                <select>
+                    <option>همه</option>
+                    <option>رایگان</option>
+                    <option>کمتر از $50</option>
+                    <option>$50-$200</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/placeholder.svg?height=200&width=300" alt="محصول 1">
+                </div>
+                <div class="product-info">
+                    <h3>ابزار طراحی حرفه‌ای</h3>
+                    <p>ابزاری قدرتمند برای طراحان گرافیک</p>
+                    <div class="product-price">$99</div>
+                    <button class="btn-primary">خرید</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/placeholder.svg?height=200&width=300" alt="محصول 2">
+                </div>
+                <div class="product-info">
+                    <h3>دوره آموزش برنامه‌نویسی</h3>
+                    <p>یادگیری کامل JavaScript و React</p>
+                    <div class="product-price">$149</div>
+                    <button class="btn-primary">خرید</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/placeholder.svg?height=200&width=300" alt="محصول 3">
+                </div>
+                <div class="product-info">
+                    <h3>قالب وب‌سایت</h3>
+                    <p>قالب آماده و واکنش‌گرا</p>
+                    <div class="product-price">$29</div>
+                    <button class="btn-primary">خرید</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/placeholder.svg?height=200&width=300" alt="محصول 4">
+                </div>
+                <div class="product-info">
+                    <h3>پلاگین وردپرس</h3>
+                    <p>افزونه قدرتمند برای وردپرس</p>
+                    <div class="product-price">رایگان</div>
+                    <button class="btn-primary">دانلود</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/marketplace.js"></script>
+</body>
+</html>
