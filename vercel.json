@@ -1,35 +1,135 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "about.html", "use": "@vercel/static" },
-    { "src": "amp.html", "use": "@vercel/static" },
-    { "src": "contact.html", "use": "@vercel/static" },
-    { "src": "faq.html", "use": "@vercel/static" },
-    { "src": "how-to-buy.html", "use": "@vercel/static" },
-    { "src": "login-signup.html", "use": "@vercel/static" },
-    { "src": "partners.html", "use": "@vercel/static" },
-    { "src": "roadmap.html", "use": "@vercel/static" },
-    { "src": "css/**", "use": "@vercel/static" },
-    { "src": "js/**", "use": "@vercel/static" },
-    { "src": "public/**", "use": "@vercel/static" },
-    { "src": "package.json", "use": "@vercel/next" }
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/amp", "dest": "/amp.html" },
-    { "src": "/contact", "dest": "/contact.html" },
-    { "src": "/faq", "dest": "/faq.html" },
-    { "src": "/how-to-buy", "dest": "/how-to-buy.html" },
-    { "src": "/login-signup", "dest": "/login-signup.html" },
-    { "src": "/partners", "dest": "/partners.html" },
-    { "src": "/roadmap", "dest": "/roadmap.html" },
-    { "src": "/css/(.*)", "dest": "/css/$1" },
-    { "src": "/js/(.*)", "dest": "/js/$1" },
-    { "src": "/public/(.*)", "dest": "/public/$1" },
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/admin", "dest": "/pages/admin" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization"
+      }
+    },
+    {
+      "src": "/_next/static/(.*)",
+      "dest": "/_next/static/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/css/(.*)",
+      "dest": "/css/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000"
+      }
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/js/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000"
+      }
+    },
+    {
+      "src": "/about",
+      "dest": "/about",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/faq",
+      "dest": "/faq",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/how-to-buy",
+      "dest": "/how-to-buy",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/login-signup",
+      "dest": "/login-signup",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/partners",
+      "dest": "/partners",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/roadmap",
+      "dest": "/roadmap",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/amp",
+      "dest": "/amp",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/admin",
+      "dest": "/admin",
+      "headers": {
+        "Cache-Control": "no-cache, no-store, must-revalidate"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html",
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+      }
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/token/:id",
+      "destination": "/api/token?id=:id"
+    }
   ]
 }
