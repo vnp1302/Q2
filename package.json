@@ -1,64 +1,25 @@
+
 {
-  "name": "q1-token-website",
-  "version": "1.0.0",
-  "description": "Official website for Q1 Token - ERC1155 Multi-Token Ecosystem",
-  "main": "index.js",
+  "name": "q2-website",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && gh-pages -d out",
-    "format": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "^14.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "web3": "^4.0.0",
-    "ethers": "^6.0.0",
-    "next-auth": "^4.24.0",
-    "gsap": "^3.11.4",
-    "@openzeppelin/contracts": "^4.9.0",
-    "@walletconnect/web3-provider": "^1.8.0",
-    "web3modal": "^1.9.10"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "typescript": "^5.0.0",
-    "eslint": "^8.28.0",
+    "eslint": "^8.0.0",
     "eslint-config-next": "^14.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-html": "^7.1.0",
-    "gh-pages": "^4.0.0",
-    "prettier": "^2.8.0",
-    "sass": "^1.56.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/your-repo/q1-token-website.git"
-  },
-  "keywords": [
-    "erc1155",
-    "blockchain",
-    "ethereum",
-    "polygon",
-    "web3",
-    "nextjs"
-  ],
-  "author": "Q1 Team",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/your-repo/q1-token-website/issues"
-  },
-  "homepage": "https://github.com/your-repo/q1-token-website#readme",
-  "browserslist": [
-    "last 2 versions",
-    "not dead",
-    "> 0.2%"
-  ]
+    "typescript": "^5.0.0"
+  }
 }
