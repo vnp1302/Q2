@@ -16,7 +16,18 @@ interface CustomHeadProps {
 
 }
 
-
+export default function CustomHead({
+  title = "Q2 Project",
+  description = "Q2 Web3 Project Description",
+}: CustomHeadProps) {
+  return (
+    <Head>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+  )
+}
 
 export const CustomHead = ({
 
